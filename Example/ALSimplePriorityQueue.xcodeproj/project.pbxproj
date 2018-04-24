@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0FF50E983872F96B7F2569BC /* Pods_ALSimplePriorityQueue_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B30C2DD40578718253E1D30 /* Pods_ALSimplePriorityQueue_Tests.framework */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		89EBA843208FC56E0048B6DB /* PiorityQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBA842208FC56E0048B6DB /* PiorityQueueTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1531E8E220342AF0C1426774 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1C085978F288B27E9CD27819 /* ALSimplePriorityQueue.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ALSimplePriorityQueue.podspec; path = ../ALSimplePriorityQueue.podspec; sourceTree = "<group>"; };
+		1531E8E220342AF0C1426774 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1C085978F288B27E9CD27819 /* ALSimplePriorityQueue.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ALSimplePriorityQueue.podspec; path = ../ALSimplePriorityQueue.podspec; sourceTree = "<group>"; };
 		286BB68B38E296382F618BF1 /* Pods-ALSimplePriorityQueue_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALSimplePriorityQueue_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALSimplePriorityQueue_Tests/Pods-ALSimplePriorityQueue_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* ALSimplePriorityQueue_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALSimplePriorityQueue_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		89EBA842208FC56E0048B6DB /* PiorityQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiorityQueueTests.swift; sourceTree = "<group>"; };
 		9B30C2DD40578718253E1D30 /* Pods_ALSimplePriorityQueue_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALSimplePriorityQueue_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4F59FF49E4523113FF9532D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B4F59FF49E4523113FF9532D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DEB9FDD8BC1751B2D8D69D68 /* Pods-ALSimplePriorityQueue_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALSimplePriorityQueue_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALSimplePriorityQueue_Tests/Pods-ALSimplePriorityQueue_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,8 +65,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				89EBA842208FC56E0048B6DB /* PiorityQueueTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -131,10 +131,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -179,14 +175,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ALSimplePriorityQueue_Tests/Pods-ALSimplePriorityQueue_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ALSimplePriorityQueue/ALSimplePriorityQueue.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ALSimplePriorityQueue.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -233,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				89EBA843208FC56E0048B6DB /* PiorityQueueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,4 @@
 use_frameworks!
 target 'ALSimplePriorityQueue_Tests' do
   pod 'ALSimplePriorityQueue', :path => '../'
-  
-  pod 'Quick', '~> 1.2.0'
-    pod 'Nimble', '~> 7.0.2'
 end

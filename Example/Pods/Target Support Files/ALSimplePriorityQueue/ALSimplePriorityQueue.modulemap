@@ -1,0 +1,6 @@
+framework module ALSimplePriorityQueue {
+  umbrella header "ALSimplePriorityQueue-umbrella.h"
+
+  export *
+  module * { export * }
+}
