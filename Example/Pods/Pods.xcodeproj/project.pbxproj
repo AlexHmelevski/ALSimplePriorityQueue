@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17F469C525186911570DFD84A1D85F51 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5065606CADB9D64132E9C620A43FA9 /* ReplaceMe.swift */; };
-		2B9B7DFD9ACC6BBAF73DED55B38040E0 /* ALSimplePriorityQueue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4A56906151116FC7FA1B05D448F6C3 /* ALSimplePriorityQueue-dummy.m */; };
-		4F30FF9C100D86786D9B7497A0F8C2A0 /* ALSimplePriorityQueue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8AF9E3B07B561D6A136D0FA1B05C95 /* ALSimplePriorityQueue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E28583FE2A2C15C028A2B5D8CCB7A33 /* PriorityValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00873A30012BDD5EDD6D25C412ACC1AF /* PriorityValue.swift */; };
+		2C7C588C9099C69164BE4088A13FD741 /* ALSimplePriorityQueue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB1B80C2C26920E638F80EA57DFD93B0 /* ALSimplePriorityQueue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		386A784ADA4C4868CA97CBE1EC826BE0 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EF587A18150FF2994AE2321696DC4 /* PriorityQueue.swift */; };
 		5FCD306FDA46B20FDFB79295F535D60B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		89EBA83F208FB3E70048B6DB /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBA83E208FB3E70048B6DB /* PriorityQueue.swift */; };
-		89EBA841208FB5D10048B6DB /* PriorityValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBA840208FB5D10048B6DB /* PriorityValue.swift */; };
-		8CCB6014F0B673DC81B268C0C565ED11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9C07C09B7D4D701CA5DDC36C77167171 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B468B42F1EA743636BE48634E8633051 /* ALSimplePriorityQueue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0FE83AB9E307B67AB14596EE57936F /* ALSimplePriorityQueue-dummy.m */; };
 		C138F3789493D155376604FF4C17D400 /* Pods-ALSimplePriorityQueue_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3B854DD0CF5D82FB83BE8CD106C337C /* Pods-ALSimplePriorityQueue_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE083C1694FCAA24C782CC193F72E70E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A3DE6199FF2FAD73ACC5813041066C /* ReplaceMe.swift */; };
 		F3C075E22FFE04484A9B25B956785BFF /* Pods-ALSimplePriorityQueue_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E864250E883119972896C1C554E49E /* Pods-ALSimplePriorityQueue_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -23,35 +23,35 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0B954791F3C2F5598A8A05E0814C2CB8;
+			remoteGlobalIDString = 3CFD47BF5EEC4AC487B102040FB67D5F;
 			remoteInfo = ALSimplePriorityQueue;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00873A30012BDD5EDD6D25C412ACC1AF /* PriorityValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PriorityValue.swift; path = ALSimplePriorityQueue/Classes/PriorityValue.swift; sourceTree = "<group>"; };
 		19E864250E883119972896C1C554E49E /* Pods-ALSimplePriorityQueue_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ALSimplePriorityQueue_Tests-dummy.m"; sourceTree = "<group>"; };
-		1B76E17B8276D3925BBEF7BB2247B64F /* ALSimplePriorityQueue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ALSimplePriorityQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B76E17B8276D3925BBEF7BB2247B64F /* ALSimplePriorityQueue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ALSimplePriorityQueue.framework; path = ALSimplePriorityQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BB97910B6A6AD8B6B0F6DAA35513D51 /* Pods-ALSimplePriorityQueue_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ALSimplePriorityQueue_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2567E60169917342EC5B176B8082E2E8 /* ALSimplePriorityQueue-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALSimplePriorityQueue-prefix.pch"; sourceTree = "<group>"; };
-		2B5065606CADB9D64132E9C620A43FA9 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ALSimplePriorityQueue/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		3EAD5CE848E8789C9796345D594F3E19 /* ALSimplePriorityQueue.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALSimplePriorityQueue.xcconfig; sourceTree = "<group>"; };
+		1F212FA7280088C18132A819AFA1C8FA /* ALSimplePriorityQueue-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALSimplePriorityQueue-prefix.pch"; sourceTree = "<group>"; };
+		2C0EF587A18150FF2994AE2321696DC4 /* PriorityQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PriorityQueue.swift; path = ALSimplePriorityQueue/Classes/PriorityQueue.swift; sourceTree = "<group>"; };
 		4054A244DF961D618E5157F6672CC313 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C565E44AC8B8DF493A519571C95374A /* Pods-ALSimplePriorityQueue_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALSimplePriorityQueue_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4CA73EFFE0207A9704146DE98BDB7D88 /* ALSimplePriorityQueue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ALSimplePriorityQueue.modulemap; sourceTree = "<group>"; };
 		5A29C9D4AD5F3833EC5061BD592B2328 /* Pods-ALSimplePriorityQueue_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALSimplePriorityQueue_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5C7491810A8C627FDA729A72D35A89AA /* Pods-ALSimplePriorityQueue_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALSimplePriorityQueue_Tests-resources.sh"; sourceTree = "<group>"; };
 		5C94BD54D51F38D3CB22E73CCA2D45C7 /* Pods-ALSimplePriorityQueue_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ALSimplePriorityQueue_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		617DAAC714D98CFD65D1771AC96AA41E /* Pods-ALSimplePriorityQueue_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ALSimplePriorityQueue_Tests.modulemap"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		89EBA83E208FB3E70048B6DB /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PriorityQueue.swift; path = ALSimplePriorityQueue/Classes/PriorityQueue.swift; sourceTree = "<group>"; };
-		89EBA840208FB5D10048B6DB /* PriorityValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PriorityValue.swift; path = ALSimplePriorityQueue/Classes/PriorityValue.swift; sourceTree = "<group>"; };
-		8A8AF9E3B07B561D6A136D0FA1B05C95 /* ALSimplePriorityQueue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALSimplePriorityQueue-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ABA01A7B46B380F02B2282F13C00CFB /* ALSimplePriorityQueue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ALSimplePriorityQueue.modulemap; sourceTree = "<group>"; };
 		A3B854DD0CF5D82FB83BE8CD106C337C /* Pods-ALSimplePriorityQueue_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ALSimplePriorityQueue_Tests-umbrella.h"; sourceTree = "<group>"; };
-		B55A9D0372829F3C241C07799ED4A27B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B675AB9D4EAEB74B9041890EF37AF1B2 /* Pods_ALSimplePriorityQueue_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALSimplePriorityQueue_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9567A62635D4EDD9B24116731ED53ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B675AB9D4EAEB74B9041890EF37AF1B2 /* Pods_ALSimplePriorityQueue_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ALSimplePriorityQueue_Tests.framework; path = "Pods-ALSimplePriorityQueue_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A3DE6199FF2FAD73ACC5813041066C /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ALSimplePriorityQueue/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		DB1B80C2C26920E638F80EA57DFD93B0 /* ALSimplePriorityQueue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALSimplePriorityQueue-umbrella.h"; sourceTree = "<group>"; };
+		DE0FE83AB9E307B67AB14596EE57936F /* ALSimplePriorityQueue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALSimplePriorityQueue-dummy.m"; sourceTree = "<group>"; };
 		E2D1FCA5B57208513FC792F3FB691877 /* Pods-ALSimplePriorityQueue_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALSimplePriorityQueue_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		FC4A56906151116FC7FA1B05D448F6C3 /* ALSimplePriorityQueue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALSimplePriorityQueue-dummy.m"; sourceTree = "<group>"; };
+		F92767E5F8BBB0CABBDF391A4E354D9C /* ALSimplePriorityQueue.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALSimplePriorityQueue.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +63,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD68AF7B2D56A0B147527422A444EBCF /* Frameworks */ = {
+		EEE6B0CBD6417E91F1D3C42F179E01E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CCB6014F0B673DC81B268C0C565ED11 /* Foundation.framework in Frameworks */,
+				9C07C09B7D4D701CA5DDC36C77167171 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,21 +92,13 @@
 			path = "Target Support Files/Pods-ALSimplePriorityQueue_Tests";
 			sourceTree = "<group>";
 		};
-		501AB6F0F8B8F88BE6896F8C9509C5CD /* Development Pods */ = {
+		16DD8520B266B40E764D9E153AE13C8D /* ALSimplePriorityQueue */ = {
 			isa = PBXGroup;
 			children = (
-				5393E382386B061B17B472B4769D7DB4 /* ALSimplePriorityQueue */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		5393E382386B061B17B472B4769D7DB4 /* ALSimplePriorityQueue */ = {
-			isa = PBXGroup;
-			children = (
-				2B5065606CADB9D64132E9C620A43FA9 /* ReplaceMe.swift */,
-				AAF01AD233D8B9190203F69D8DC296F0 /* Support Files */,
-				89EBA83E208FB3E70048B6DB /* PriorityQueue.swift */,
-				89EBA840208FB5D10048B6DB /* PriorityValue.swift */,
+				2C0EF587A18150FF2994AE2321696DC4 /* PriorityQueue.swift */,
+				00873A30012BDD5EDD6D25C412ACC1AF /* PriorityValue.swift */,
+				B8A3DE6199FF2FAD73ACC5813041066C /* ReplaceMe.swift */,
+				CEE0571F2F916C0F3D1F6F223E58548C /* Support Files */,
 			);
 			name = ALSimplePriorityQueue;
 			path = ../..;
@@ -116,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				501AB6F0F8B8F88BE6896F8C9509C5CD /* Development Pods */,
+				FD60103A6DAFEF25912234E8A8F94330 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				CB02FE810E3285A648048ABE7D97EE12 /* Products */,
 				A88696643BDD6F10A615E5C12C45CFF8 /* Targets Support Files */,
@@ -129,20 +121,6 @@
 				0DDD9D7B5E48F373BBDB030DD34E171E /* Pods-ALSimplePriorityQueue_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		AAF01AD233D8B9190203F69D8DC296F0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4CA73EFFE0207A9704146DE98BDB7D88 /* ALSimplePriorityQueue.modulemap */,
-				3EAD5CE848E8789C9796345D594F3E19 /* ALSimplePriorityQueue.xcconfig */,
-				FC4A56906151116FC7FA1B05D448F6C3 /* ALSimplePriorityQueue-dummy.m */,
-				2567E60169917342EC5B176B8082E2E8 /* ALSimplePriorityQueue-prefix.pch */,
-				8A8AF9E3B07B561D6A136D0FA1B05C95 /* ALSimplePriorityQueue-umbrella.h */,
-				B55A9D0372829F3C241C07799ED4A27B /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ALSimplePriorityQueue";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -162,12 +140,34 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CEE0571F2F916C0F3D1F6F223E58548C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9ABA01A7B46B380F02B2282F13C00CFB /* ALSimplePriorityQueue.modulemap */,
+				F92767E5F8BBB0CABBDF391A4E354D9C /* ALSimplePriorityQueue.xcconfig */,
+				DE0FE83AB9E307B67AB14596EE57936F /* ALSimplePriorityQueue-dummy.m */,
+				1F212FA7280088C18132A819AFA1C8FA /* ALSimplePriorityQueue-prefix.pch */,
+				DB1B80C2C26920E638F80EA57DFD93B0 /* ALSimplePriorityQueue-umbrella.h */,
+				A9567A62635D4EDD9B24116731ED53ED /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ALSimplePriorityQueue";
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		FD60103A6DAFEF25912234E8A8F94330 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16DD8520B266B40E764D9E153AE13C8D /* ALSimplePriorityQueue */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,24 +181,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE5C433E00B11EAD2AD705111A1D919E /* Headers */ = {
+		D8B1C2B43C762E5D8A06130F77E06639 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F30FF9C100D86786D9B7497A0F8C2A0 /* ALSimplePriorityQueue-umbrella.h in Headers */,
+				2C7C588C9099C69164BE4088A13FD741 /* ALSimplePriorityQueue-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0B954791F3C2F5598A8A05E0814C2CB8 /* ALSimplePriorityQueue */ = {
+		3CFD47BF5EEC4AC487B102040FB67D5F /* ALSimplePriorityQueue */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0892DC0C74624604E23945EC3F91F5DA /* Build configuration list for PBXNativeTarget "ALSimplePriorityQueue" */;
+			buildConfigurationList = A23E4688D228B2F8CC7372FB25973BBF /* Build configuration list for PBXNativeTarget "ALSimplePriorityQueue" */;
 			buildPhases = (
-				172BA613A9CCDD3A9D44A3DF16E03121 /* Sources */,
-				FD68AF7B2D56A0B147527422A444EBCF /* Frameworks */,
-				FE5C433E00B11EAD2AD705111A1D919E /* Headers */,
+				AF9729667F420FB564B565C6FC403374 /* Sources */,
+				EEE6B0CBD6417E91F1D3C42F179E01E0 /* Frameworks */,
+				D8B1C2B43C762E5D8A06130F77E06639 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -248,7 +248,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B954791F3C2F5598A8A05E0814C2CB8 /* ALSimplePriorityQueue */,
+				3CFD47BF5EEC4AC487B102040FB67D5F /* ALSimplePriorityQueue */,
 				FB81367AC7296F934A662E7A52DC6C3A /* Pods-ALSimplePriorityQueue_Tests */,
 			);
 		};
@@ -263,14 +263,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		172BA613A9CCDD3A9D44A3DF16E03121 /* Sources */ = {
+		AF9729667F420FB564B565C6FC403374 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B9B7DFD9ACC6BBAF73DED55B38040E0 /* ALSimplePriorityQueue-dummy.m in Sources */,
-				89EBA841208FB5D10048B6DB /* PriorityValue.swift in Sources */,
-				17F469C525186911570DFD84A1D85F51 /* ReplaceMe.swift in Sources */,
-				89EBA83F208FB3E70048B6DB /* PriorityQueue.swift in Sources */,
+				B468B42F1EA743636BE48634E8633051 /* ALSimplePriorityQueue-dummy.m in Sources */,
+				386A784ADA4C4868CA97CBE1EC826BE0 /* PriorityQueue.swift in Sources */,
+				1E28583FE2A2C15C028A2B5D8CCB7A33 /* PriorityValue.swift in Sources */,
+				CE083C1694FCAA24C782CC193F72E70E /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +280,7 @@
 		5DF170CB68A7B5C47F1D2A77BFA0B202 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ALSimplePriorityQueue;
-			target = 0B954791F3C2F5598A8A05E0814C2CB8 /* ALSimplePriorityQueue */;
+			target = 3CFD47BF5EEC4AC487B102040FB67D5F /* ALSimplePriorityQueue */;
 			targetProxy = 69605491A83E0BD186D5CCF51F68EA40 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -319,37 +319,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		36DB291435F125DB3A3FE8FDF52DC9AE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EAD5CE848E8789C9796345D594F3E19 /* ALSimplePriorityQueue.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ALSimplePriorityQueue/ALSimplePriorityQueue-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ALSimplePriorityQueue/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ALSimplePriorityQueue/ALSimplePriorityQueue.modulemap";
-				PRODUCT_NAME = ALSimplePriorityQueue;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		42BE3C48FBD799B82F832E745F61BA8A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -506,9 +475,9 @@
 			};
 			name = Release;
 		};
-		86649096ACEDDAF2F2DFC01ABF7B899D /* Release */ = {
+		A2539556228C35AE9A88F70D22D5D7C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EAD5CE848E8789C9796345D594F3E19 /* ALSimplePriorityQueue.xcconfig */;
+			baseConfigurationReference = F92767E5F8BBB0CABBDF391A4E354D9C /* ALSimplePriorityQueue.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -538,23 +507,54 @@
 			};
 			name = Release;
 		};
+		AE6DDE970C156E90044EFCFADBA98405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F92767E5F8BBB0CABBDF391A4E354D9C /* ALSimplePriorityQueue.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ALSimplePriorityQueue/ALSimplePriorityQueue-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALSimplePriorityQueue/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ALSimplePriorityQueue/ALSimplePriorityQueue.modulemap";
+				PRODUCT_NAME = ALSimplePriorityQueue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0892DC0C74624604E23945EC3F91F5DA /* Build configuration list for PBXNativeTarget "ALSimplePriorityQueue" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				36DB291435F125DB3A3FE8FDF52DC9AE /* Debug */,
-				86649096ACEDDAF2F2DFC01ABF7B899D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
 				827269710C98D60C14D46BC6AF9BF728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A23E4688D228B2F8CC7372FB25973BBF /* Build configuration list for PBXNativeTarget "ALSimplePriorityQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6DDE970C156E90044EFCFADBA98405 /* Debug */,
+				A2539556228C35AE9A88F70D22D5D7C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

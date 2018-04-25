@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ALSimplePriorityQueue'
   s.version          = '0.1.0'
-  s.summary          = 'Simple implementation of the Priority Queue'
+  s.summary          = 'A short description of ALSimplePriorityQueue.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +17,10 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = The class represent simple idea of PriorityQueue. It doesn't contain super performant solution
+  s.description      = <<-DESC
+A class represents super simple idea of PriorityQueue. Doesnt contain a super performant
+algorithm
+                       DESC
 
   s.homepage         = 'https://github.com/AlexHmelevski/ALSimplePriorityQueue'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -26,7 +29,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/AlexHmelevski/ALSimplePriorityQueue.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'ALSimplePriorityQueue/Classes/**/*'
   
