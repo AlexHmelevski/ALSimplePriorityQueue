@@ -14,6 +14,6 @@ default_platform(:ios)
 platform :ios do
   desc "Podspecpush"
   lane :pushspecpush do
-    pod_push
+    pod_push(swift_version: "4.1")
   end
 end
