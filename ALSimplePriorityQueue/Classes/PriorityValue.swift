@@ -16,15 +16,15 @@ public extension PriorityValue {
 }
 
 
-struct PriorityQueue<T: PriorityQueueItem> {
+public struct PriorityQueue<T: PriorityQueueItem> {
     private var items: [PriorityValue: [T]] = [:]
     
     
-    mutating func push(item: T) {
+    public mutating func push(item: T) {
         items[item.priority] = items[item.priority].map({ $0 + [item]}) ?? [item]
     }
     
-    mutating func popNextItem() -> T? {
+    public mutating func popNextItem() -> T? {
        return  highestPriority.map({($0, self.items(withPriority: $0))})
                               .flatMap({self.removeFirstItem(from: $0.1, withPriority: $0.0)})
         
@@ -39,7 +39,7 @@ struct PriorityQueue<T: PriorityQueueItem> {
         return items[priority] ?? []
     }
     
-    func items(withPriority check: (PriorityValue) -> Bool) -> [T] {
+    public func items(withPriority check: (PriorityValue) -> Bool) -> [T] {
        return items.reduce([]) { (part, dictItem) -> [T] in
             if check(dictItem.key) {
                 return part + dictItem.value
