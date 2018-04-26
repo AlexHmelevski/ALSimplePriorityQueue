@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -46,7 +46,7 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0B954791F3C2F5598A8A05E0814C2CB8"
+            BlueprintIdentifier = "3CFD47BF5EEC4AC487B102040FB67D5F"
             BuildableName = "ALSimplePriorityQueue.framework"
             BlueprintName = "ALSimplePriorityQueue"
             ReferencedContainer = "container:Pods/Pods.xcodeproj">
