@@ -19,6 +19,7 @@ public extension PriorityValue {
 public struct PriorityQueue<T: PriorityQueueItem> {
     private var items: [PriorityValue: [T]] = [:]
     
+    public init() {}
     
     public mutating func push(item: T) {
         items[item.priority] = items[item.priority].map({ $0 + [item]}) ?? [item]
