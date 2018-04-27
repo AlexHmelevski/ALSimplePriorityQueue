@@ -9,7 +9,7 @@ import Foundation
 
 
 extension Dictionary {
-    func values(where condition: (Key) -> Bool) -> [Value]  {
+    public func values(where condition: (Key) -> Bool) -> [Value]  {
        return reduce([]) { (part, dictItem) -> [Value] in
             if condition(dictItem.key) {
                 return part + [dictItem.value]
@@ -20,7 +20,7 @@ extension Dictionary {
     }
     
     
-    func replacedWithNewItem(_ item: Value, whereOldItem condition: (Value) -> Bool) -> Dictionary {
+    public func replacedWithNewItem(_ item: Value, whereOldItem condition: (Value) -> Bool) -> Dictionary {
         return reduce([:], { (partial, dictElement) -> Dictionary in
             var partial = partial
             if condition(dictElement.value) {
@@ -32,7 +32,7 @@ extension Dictionary {
         })
     }
     
-    func removedItem(item: Value, where condition: (Value) -> Bool) -> Dictionary {
+    public func removedItem(item: Value, where condition: (Value) -> Bool) -> Dictionary {
         return reduce([:], { (partial, dictElement) -> Dictionary in
             var partial = partial
             if !condition(dictElement.value) {
@@ -44,7 +44,7 @@ extension Dictionary {
 }
 
 extension Dictionary where Value: Hashable {
-    func removedItem(item: Value) -> Dictionary {
+    public func removedItem(item: Value) -> Dictionary {
         return removedItem(item: item, where: {$0.hashValue == item.hashValue})
     }
     

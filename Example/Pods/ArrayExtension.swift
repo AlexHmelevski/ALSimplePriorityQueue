@@ -9,7 +9,7 @@ import Foundation
 
 
 extension Array where Element: Hashable {
-    func replacedItem(_ item: Element) -> Array {
+    public func replacedItem(_ item: Element) -> Array {
         return reduce([], { (partial, element) -> Array in
             if element.hashValue == item.hashValue {
                 return partial + [item]
