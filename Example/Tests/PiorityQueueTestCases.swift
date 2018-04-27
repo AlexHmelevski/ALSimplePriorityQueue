@@ -1,5 +1,5 @@
 //
-//  PiorityQueueTests.swift
+//  PiorityQueueTestCases.swift
 //  ALSimplePriorityQueue_Tests
 //
 //  Created by Alex Hmelevski on 2018-04-24.
@@ -16,44 +16,6 @@ struct MockPriorityItem: PriorityQueueItem, Equatable {
 }
 
 
-class PiorityQueueTester {
-    
-    typealias AdditionalQueueCheck = (PriorityQueue<MockPriorityItem>) -> Bool
-    private(set) var queueToTest: PriorityQueue<MockPriorityItem>
-    init() {
-        self.queueToTest = PriorityQueue<MockPriorityItem>()
-    }
-    
-    @discardableResult
-    func push(itemsWithPriorities priorities: [PriorityValue]) -> [MockPriorityItem]  {
-        let items = priorities.map({ MockPriorityItem(priority: $0, name: "\($0)") })
-        items.forEach({ queueToTest.push(item: $0) })
-        return items
-    }
-    
-    
-    func compareLast(with item: MockPriorityItem,
-                     additionalCheck: AdditionalQueueCheck? = nil,
-                     file: StaticString = #file,
-                     line: UInt = #line) {
-        
-        XCTAssertEqual(queueToTest.popNextItem(), item,file: file, line: line)
-        if let check = additionalCheck {
-            XCTAssertTrue(check(queueToTest),file: file, line: line)
-        }
-    }
-    
-    func compareStateOfTheQueueAfterPoping(numberOfItems: Int,
-                                           additionalCheck: AdditionalQueueCheck,
-                                           file: StaticString = #file,
-                                           line: UInt = #line) {
-        for _ in 0..<numberOfItems {
-            queueToTest.popNextItem()
-        }
-        XCTAssertTrue(additionalCheck(queueToTest),file: file, line: line)
-    }
-}
-
 class PiorityQueueTests: XCTestCase {
     
 
@@ -67,7 +29,7 @@ class PiorityQueueTests: XCTestCase {
 
     func test_queue_adds_item_to_priority() {
         let items = tester.push(itemsWithPriorities: [.low])
-        tester.compareLast(with: items.first!)
+        tester.comparePopNext(with: items.first!)
     }
     
     func test_queue_should_pop_item_with_higher_priority() {
@@ -75,7 +37,7 @@ class PiorityQueueTests: XCTestCase {
         let highPriorityItem = items.first(where: {$0.priority == .high})!
         let lowPriority = items.filter({$0.priority == .low })
         
-        tester.compareLast(with: highPriorityItem,
+        tester.comparePopNext(with: highPriorityItem,
                            additionalCheck: { (queue) in
                 queue.items(withPriority: {$0 == .low}) == lowPriority
         })
@@ -95,5 +57,10 @@ class PiorityQueueTests: XCTestCase {
         tester.push(itemsWithPriorities: [.low,.high,.high])
         tester.compareStateOfTheQueueAfterPoping(numberOfItems: 3,
                                                  additionalCheck: { $0.isEmpty })
+    }
+    
+    func test_top_item_returns_the_item_with_highest_priority() {
+         let items = tester.push(itemsWithPriorities: [.low,.high,.medium])
+         tester.compareTopItem(with: items[1], additionalCheck: nil)
     }
 }

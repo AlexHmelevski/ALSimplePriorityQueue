@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0FF50E983872F96B7F2569BC /* Pods_ALSimplePriorityQueue_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B30C2DD40578718253E1D30 /* Pods_ALSimplePriorityQueue_Tests.framework */; };
-		89EBA843208FC56E0048B6DB /* PiorityQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBA842208FC56E0048B6DB /* PiorityQueueTests.swift */; };
+		8945F8F82092AB7C00D25362 /* PiorityQueueTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8945F8F72092AB7C00D25362 /* PiorityQueueTester.swift */; };
+		89EBA843208FC56E0048B6DB /* PiorityQueueTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBA842208FC56E0048B6DB /* PiorityQueueTestCases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,7 +18,8 @@
 		286BB68B38E296382F618BF1 /* Pods-ALSimplePriorityQueue_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALSimplePriorityQueue_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALSimplePriorityQueue_Tests/Pods-ALSimplePriorityQueue_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* ALSimplePriorityQueue_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALSimplePriorityQueue_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89EBA842208FC56E0048B6DB /* PiorityQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiorityQueueTests.swift; sourceTree = "<group>"; };
+		8945F8F72092AB7C00D25362 /* PiorityQueueTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiorityQueueTester.swift; sourceTree = "<group>"; };
+		89EBA842208FC56E0048B6DB /* PiorityQueueTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiorityQueueTestCases.swift; sourceTree = "<group>"; };
 		9B30C2DD40578718253E1D30 /* Pods_ALSimplePriorityQueue_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALSimplePriorityQueue_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F59FF49E4523113FF9532D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DEB9FDD8BC1751B2D8D69D68 /* Pods-ALSimplePriorityQueue_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALSimplePriorityQueue_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALSimplePriorityQueue_Tests/Pods-ALSimplePriorityQueue_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,7 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACE91AFB9204008FA782 /* Supporting Files */,
-				89EBA842208FC56E0048B6DB /* PiorityQueueTests.swift */,
+				89EBA842208FC56E0048B6DB /* PiorityQueueTestCases.swift */,
+				8945F8F72092AB7C00D25362 /* PiorityQueueTester.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -225,7 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89EBA843208FC56E0048B6DB /* PiorityQueueTests.swift in Sources */,
+				89EBA843208FC56E0048B6DB /* PiorityQueueTestCases.swift in Sources */,
+				8945F8F82092AB7C00D25362 /* PiorityQueueTester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

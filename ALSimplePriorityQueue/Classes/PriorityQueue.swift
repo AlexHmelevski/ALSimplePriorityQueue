@@ -33,8 +33,13 @@ public struct PriorityQueue<T: PriorityQueueItem> {
     }
     
     
-    private var highestPriority: PriorityValue? {
+    public var highestPriority: PriorityValue? {
         return items.keys.sorted().last
+    }
+    
+    public var topItem: T? {
+        return highestPriority.flatMap({ items[$0] })
+                              .flatMap({ $0.first })
     }
     
     private func items(withPriority priority: PriorityValue) -> [T] {
