@@ -11,6 +11,8 @@
 		2C7C588C9099C69164BE4088A13FD741 /* ALSimplePriorityQueue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0C090F92B121BA6EB0268257DE105F9 /* ALSimplePriorityQueue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		386A784ADA4C4868CA97CBE1EC826BE0 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A9CCC225FE15F46BB8C8FF2F6D33A /* PriorityQueue.swift */; };
 		5FCD306FDA46B20FDFB79295F535D60B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		89CD1EA02093C44C006D3A3E /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD1E9E2093C44C006D3A3E /* DictionaryExtension.swift */; };
+		89CD1EA12093C44C006D3A3E /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD1E9F2093C44C006D3A3E /* ArrayExtension.swift */; };
 		9C07C09B7D4D701CA5DDC36C77167171 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		B468B42F1EA743636BE48634E8633051 /* ALSimplePriorityQueue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 948D52DAC01A9B127A1BD763CCC40079 /* ALSimplePriorityQueue-dummy.m */; };
 		C138F3789493D155376604FF4C17D400 /* Pods-ALSimplePriorityQueue_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3B854DD0CF5D82FB83BE8CD106C337C /* Pods-ALSimplePriorityQueue_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,6 +45,8 @@
 		617DAAC714D98CFD65D1771AC96AA41E /* Pods-ALSimplePriorityQueue_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ALSimplePriorityQueue_Tests.modulemap"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7BDD986C2BA1C442398EEEC8BA3C5C59 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		89CD1E9E2093C44C006D3A3E /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		89CD1E9F2093C44C006D3A3E /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		948D52DAC01A9B127A1BD763CCC40079 /* ALSimplePriorityQueue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALSimplePriorityQueue-dummy.m"; sourceTree = "<group>"; };
 		A3B854DD0CF5D82FB83BE8CD106C337C /* Pods-ALSimplePriorityQueue_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ALSimplePriorityQueue_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 		5D854A7D6AF9FD158C7B87BA1D2CAA91 /* ALSimplePriorityQueue */ = {
 			isa = PBXGroup;
 			children = (
+				89CD1E9F2093C44C006D3A3E /* ArrayExtension.swift */,
+				89CD1E9E2093C44C006D3A3E /* DictionaryExtension.swift */,
 				194A9CCC225FE15F46BB8C8FF2F6D33A /* PriorityQueue.swift */,
 				E1BFA44D050F38127CCEA9D744727802 /* PriorityValue.swift */,
 				EF07B381299F0DB99792F2A33A8217DC /* ReplaceMe.swift */,
@@ -283,6 +289,8 @@
 			files = (
 				B468B42F1EA743636BE48634E8633051 /* ALSimplePriorityQueue-dummy.m in Sources */,
 				386A784ADA4C4868CA97CBE1EC826BE0 /* PriorityQueue.swift in Sources */,
+				89CD1EA02093C44C006D3A3E /* DictionaryExtension.swift in Sources */,
+				89CD1EA12093C44C006D3A3E /* ArrayExtension.swift in Sources */,
 				1E28583FE2A2C15C028A2B5D8CCB7A33 /* PriorityValue.swift in Sources */,
 				CE083C1694FCAA24C782CC193F72E70E /* ReplaceMe.swift in Sources */,
 			);
