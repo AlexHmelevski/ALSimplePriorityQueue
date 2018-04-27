@@ -116,7 +116,6 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				13D638F7A004F3052FC1E326 /* [CP] Embed Pods Frameworks */,
-				7683FF2639DD064C7C51A7D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,21 +188,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ALSimplePriorityQueue_Tests/Pods-ALSimplePriorityQueue_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7683FF2639DD064C7C51A7D7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ALSimplePriorityQueue_Tests/Pods-ALSimplePriorityQueue_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A4C8DF74C6A30C833B3B5BB3 /* [CP] Check Pods Manifest.lock */ = {
