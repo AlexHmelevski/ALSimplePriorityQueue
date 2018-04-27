@@ -19,10 +19,30 @@ class PiorityQueueTester {
     }
     
     @discardableResult
-    func push(itemsWithPriorities priorities: [PriorityValue]) -> [MockPriorityItem]  {
+    func push(itemsWithPriorities priorities: [PriorityValue],
+              file: StaticString = #file,
+              line: UInt = #line) -> [MockPriorityItem]  {
+        
         let items = priorities.map({ MockPriorityItem(priority: $0, name: "\($0)") })
         items.forEach({ queueToTest.push(item: $0) })
         return items
+    }
+    
+    
+    func testPush(item: MockPriorityItem,
+                  file: StaticString = #file,
+                  line: UInt = #line) {
+        queueToTest.push(item: item)
+        XCTAssertEqual(item, queueToTest.items(withPriority: { $0 == item.priority } ).last, file: file, line: line)
+    }
+    
+    func testReplaceItem(with item: MockPriorityItem,
+                         file: StaticString = #file,
+                         line: UInt = #line) {
+        
+        queueToTest.replace(item: item)
+        let firstItem = queueToTest.items(withPriority: {$0  == item.priority }).last!
+        XCTAssertEqual(firstItem, item,file: file, line: line)
     }
     
     

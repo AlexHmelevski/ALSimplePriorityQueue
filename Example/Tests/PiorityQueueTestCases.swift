@@ -11,6 +11,7 @@ import XCTest
 @testable import ALSimplePriorityQueue
 
 struct MockPriorityItem: PriorityQueueItem, Equatable {
+    var hashValue: Int { return priority }
     let priority: PriorityValue
     let name: String
 }
@@ -62,5 +63,12 @@ class PiorityQueueTests: XCTestCase {
     func test_top_item_returns_the_item_with_highest_priority() {
          let items = tester.push(itemsWithPriorities: [.low,.high,.medium])
          tester.compareTopItem(with: items[1], additionalCheck: nil)
+    }
+    
+    func test_replaces_item() {
+        let mock1 = MockPriorityItem(priority: 0, name: "Test")
+        let mock2 = MockPriorityItem(priority: 0, name: "Test2")
+        tester.testPush(item: mock1)
+        tester.testReplaceItem(with: mock2)
     }
 }
