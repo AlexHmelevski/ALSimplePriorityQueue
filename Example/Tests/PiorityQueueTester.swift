@@ -46,6 +46,20 @@ class PiorityQueueTester {
     }
     
     
+    func testRemoveItem(_ item: MockPriorityItem,
+                        file: StaticString = #file,
+                        line: UInt = #line) {
+        queueToTest.remove(item: item)
+        
+        XCTAssertNotEqual([item], queueToTest.items(withPriority: {$0 == item.priority}),file: file, line: line)
+    }
+    
+    
+    func highestPriorityIsEqual(toExpected expected: Int,
+                                file: StaticString = #file,
+                                line: UInt = #line) {
+       XCTAssertEqual(queueToTest.highestPriority, expected,file: file, line: line)
+    }
     func comparePopNext(with item: MockPriorityItem,
                         additionalCheck: AdditionalQueueCheck? = nil,
                         file: StaticString = #file,

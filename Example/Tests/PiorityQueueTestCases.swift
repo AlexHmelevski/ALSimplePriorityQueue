@@ -39,7 +39,7 @@ class PiorityQueueTests: XCTestCase {
         let lowPriority = items.filter({$0.priority == .low })
         
         tester.comparePopNext(with: highPriorityItem,
-                           additionalCheck: { (queue) in
+                              additionalCheck: { (queue) in
                 queue.items(withPriority: {$0 == .low}) == lowPriority
         })
     }
@@ -53,6 +53,13 @@ class PiorityQueueTests: XCTestCase {
         })
     }
     
+    func test_queue_should_have_lower_priority_after_poping_highest() {
+        tester.push(itemsWithPriorities: [.low,.high,.high])
+        tester.compareStateOfTheQueueAfterPoping(numberOfItems: 2,
+                                                 additionalCheck: {(queue) in
+                                                    queue.highestPriority == .low
+        })
+    }
     
     func test_queue_returns_empty_if_no_items_left() {
         tester.push(itemsWithPriorities: [.low,.high,.high])
@@ -70,5 +77,14 @@ class PiorityQueueTests: XCTestCase {
         let mock2 = MockPriorityItem(priority: 0, name: "Test2")
         tester.testPush(item: mock1)
         tester.testReplaceItem(with: mock2)
+    }
+    
+    func test_should_remove_item() {
+        let mock1 = MockPriorityItem(priority: 10, name: "Test")
+        let mock2 = MockPriorityItem(priority: 1, name: "Test2")
+        tester.testPush(item: mock1)
+        tester.testPush(item: mock2)
+        tester.testRemoveItem(mock1)
+        tester.highestPriorityIsEqual(toExpected: mock2.priority)
     }
 }

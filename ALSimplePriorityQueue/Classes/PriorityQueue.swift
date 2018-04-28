@@ -48,7 +48,8 @@ public struct PriorityQueue<T: PriorityQueueItem> {
     
     public mutating func remove(item: T) {
         if let priorityItems = items[item.priority] {
-            items[item.priority] = priorityItems.filter({ $0.hashValue == item.hashValue })
+            updateQueue(withItems: priorityItems.filter({ $0.hashValue != item.hashValue }),
+                        withPriority: item.priority)
         }
     }
     
