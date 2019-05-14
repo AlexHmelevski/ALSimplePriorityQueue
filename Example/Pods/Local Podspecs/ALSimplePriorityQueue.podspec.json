@@ -1,6 +1,6 @@
 {
   "name": "ALSimplePriorityQueue",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "summary": "A short description of ALSimplePriorityQueue.",
   "description": "A class represents super simple idea of PriorityQueue. Doesnt contain a super performant\nalgorithm",
   "homepage": "https://github.com/AlexHmelevski/ALSimplePriorityQueue",
@@ -13,10 +13,11 @@
   },
   "source": {
     "git": "https://github.com/AlexHmelevski/ALSimplePriorityQueue.git",
-    "tag": "0.1.6"
+    "tag": "0.1.8"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.0"
   },
+  "swift_version": "5.0",
   "source_files": "ALSimplePriorityQueue/Classes/**/*"
 }

@@ -1,5 +1,5 @@
 PODS:
-  - ALSimplePriorityQueue (0.1.6)
+  - ALSimplePriorityQueue (0.1.8)
 
 DEPENDENCIES:
   - ALSimplePriorityQueue (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ALSimplePriorityQueue: a8d834582f690ea8b1848b6d96ced64e92968ed3
+  ALSimplePriorityQueue: eea4f2879d48bd0331d74f00f57555b54d2d3183
 
 PODFILE CHECKSUM: 167f305ca37d616f5e5af963df9c30695422adeb
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.1

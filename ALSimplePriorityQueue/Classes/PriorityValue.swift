@@ -10,9 +10,9 @@ import Foundation
 public typealias PriorityValue = Int
 
 public extension PriorityValue {
-    public static var low: PriorityValue { return 250 }
-    public static var medium: PriorityValue { return 500 }
-    public static var high: PriorityValue { return 1000 }
+    static var low: PriorityValue { return 250 }
+    static var medium: PriorityValue { return 500 }
+    static var high: PriorityValue { return 1000 }
 }
 
 

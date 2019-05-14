@@ -11,9 +11,12 @@ import XCTest
 @testable import ALSimplePriorityQueue
 
 struct MockPriorityItem: PriorityQueueItem, Equatable {
-    var hashValue: Int { return priority }
     let priority: PriorityValue
     let name: String
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(priority)
+    }
 }
 
 

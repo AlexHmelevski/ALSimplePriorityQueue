@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALSimplePriorityQueue'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'A short description of ALSimplePriorityQueue.'
 
 # This description is used to generate tags and improve search results.
@@ -23,21 +23,13 @@ algorithm
                        DESC
 
   s.homepage         = 'https://github.com/AlexHmelevski/ALSimplePriorityQueue'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'AlexHmelevskiAG' => 'alexei.hmelevski@gmail.com' }
   s.source           = { :git => 'https://github.com/AlexHmelevski/ALSimplePriorityQueue.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'ALSimplePriorityQueue/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'ALSimplePriorityQueue' => ['ALSimplePriorityQueue/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
